@@ -1,0 +1,93 @@
+
+        body {
+            margin: 0;
+            background: #f6fbff;
+            font-family: Arial, sans-serif;
+        }
+        .nav1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 48px;
+            background: #2196f3;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            z-index: 100;
+            box-shadow: 0 2px 8px #0001;
+        }
+        .nav1 p, .nav1 img {
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .main-content {
+            display: flex;
+            margin-top: 56px;
+            min-height: calc(100vh - 56px);
+        }
+        .div_menu {
+            width: 30vw;
+            min-width: 220px;
+            max-width: 400px;
+            background: #e3f2fd;
+            padding: 16px 8px;
+            box-sizing: border-box;
+        }
+        .div_post {
+            flex: 1;
+            padding: 24px;
+            background: #fff;
+            box-sizing: border-box;
+        }
+        button {
+            background: #2196f3;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            margin: 4px 2px;
+            padding: 6px 12px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #1976d2;
+        }
+        .div_param {
+            display: none;
+            position: fixed;
+            top: 48px;
+            left: 0;
+            width: 220px;
+            background: #e3f2fd;
+            box-shadow: 2px 0 8px #0001;
+            padding: 16px 8px;
+            z-index: 101;
+        }
+        .div_param.active {
+            display: block;
+        }
+        @media (max-width: 800px) {
+            .div_menu {
+                width: 40vw;
+                min-width: 120px;
+            }
+        }
+        @media (max-width: 600px) {
+            .main-content {
+                flex-direction: column;
+            }
+            .div_menu, .div_post {
+                width: 100vw;
+                min-width: 0;
+                max-width: none;
+                margin: 0;
+                padding: 8px;
+            }
+            .div_post {
+                padding: 8px;
+            }
+        }
+
+   
