@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceuille Rpg</title>
+  
+</head>
+<body>
+    <nav class="nav1">
+        <p>Accueil</p>
+        <p>Profil</p>
+        <p>Notification</p>
+        <p>ProfAi</p>
+        <p>Message</p>
+        <p><img src="./ampoule.webp" alt="" style="height:28px;"></p>
+        <button id="menuBtn" style="margin-left:20px;">Menu</button>
+    </nav>
+    <div class="div_param" id="sideMenu">
+        <p><strong>Menu</strong></p>
+        <p>Paramètre</p>
+        <p>Déconnexion</p>
+    </div>
+    <div class="main-content">
+        <div class="div_menu">
+            <div class="div3">
+                <input type="search" placeholder="Recherche...">
+            </div>
+            <button>Ajouter</button>
+            <div class="div4">
+                <p>Bots</p>
+                <p>Fou sport</p>
+                <p>Science de ouf</p>
+            </div>
+            <div class="div5">
+                <p>Groupes</p>
+                <div>
+                    <span>Développeurs</span>
+                    <button>Rejoindre</button>
+                    <button>Supprimer</button>
+                </div>
+                <div>
+                    <span>Fans de manga</span>
+                    <button>Rejoindre</button>
+                    <button>Supprimer</button>
+                </div>
+            </div>
+        </div>
+        <div class="div_post">
+            <form id="postForm" style="margin-bottom:24px;">
+                <label>
+                    Fichier :
+                    <input type="file" id="fileInput" required>
+                </label><br><br>
+                <label>
+                    Description :
+                    <input type="text" id="descInput" placeholder="Décris ta publication" required>
+                </label><br><br>
+                <label>
+                    Expéditeur :
+                    <input type="text" id="senderInput" placeholder="Ton nom" required>
+                </label><br><br>
+                <button type="submit">Publier</button>
+            </form>
+            <div id="posts"></div>
+        </div>
+    </div>
+   
+</body>
+</html>
